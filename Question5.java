@@ -26,15 +26,14 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
      
-    Scanner in = new Scanner(System.in);
+   Scanner in = new Scanner(System.in);
 
-    
+    /prompting input & setting variable/
     int num = in.nextInt();
     int[] b = new int[num];
     int i = 0;
 
-   
-    /*while loop is used to cpature all the inputs*/
+    /while loop is used to cpature all the inputs/
     while (i < num){
 
       int tempnum = in.nextInt();
@@ -46,34 +45,34 @@ public class Question5
 
     int maxint = 0;
     int maxoccurrence = 0;
-    
-    /*looking for integer with the max. occurrence*/
+
+    /looking for integer with the max. occurrence/
     for (int k = 0; k < b.length; k++){
 
       int tempnum = b[k];
       int tempoccurrence = 0;
 
-      /*doing comparesion*/
+      /doing comparesion/
       for (int l = 0; l < b.length; l++){
-        
+
         if (tempnum == b[l]){
-  
+
           tempoccurrence += 1;
-          
+
         }
       }
 
-       /*doing overwritting*/
+       /doing overwritting/
       if (maxoccurrence < tempoccurrence){
 
         maxoccurrence = tempoccurrence;
         maxint = b[k];
-        
+
       }
     }
 
-    /*displaying*/
-    System.out.println(maxint));
-    
+    /displaying**/
+    System.out.println(maxint);
+
   }
 }
