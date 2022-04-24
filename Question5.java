@@ -28,12 +28,12 @@ public class Question5
 
     Scanner in = new Scanner(System.in);
 
-    /prompting input & setting variable/
+
     int num = in.nextInt();
     int[] b = new int[num];
     int i = 0;
 
-    /while loop is used to cpature all the inputs/
+
     while (i < num){
 
       int tempnum = in.nextInt();
@@ -46,13 +46,12 @@ public class Question5
     int maxint = 0;
     int maxoccurrence = 0;
 
-    /looking for integer with the max. occurrence/
     for (int k = 0; k < b.length; k++){
 
       int tempnum = b[k];
       int tempoccurrence = 0;
 
-      /doing comparesion/
+
       for (int l = 0; l < b.length; l++){
 
         if (tempnum == b[l]){
@@ -62,7 +61,7 @@ public class Question5
         }
       }
 
-       /doing overwritting/
+
       if (maxoccurrence < tempoccurrence){
 
         maxoccurrence = tempoccurrence;
@@ -71,7 +70,7 @@ public class Question5
       }
     }
 
-    /displaying**/
+    
     System.out.println(maxint);
 
   }
