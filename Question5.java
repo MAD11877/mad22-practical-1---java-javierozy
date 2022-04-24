@@ -73,7 +73,7 @@ public class Question5
     }
 
     /*displaying*/
-    System.out.println(Integer.toString(maxint));
+    System.out.println(maxint));
     
   }
 }
