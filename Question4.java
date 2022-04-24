@@ -1,44 +1,35 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Question4
 {
   public static void main(String[] args)
   {
-    /**
+    /
      * Prints a right angle triangle with *. The base of the triangle depends on the integer given.
      *    e.g.
      *     > 5
-     *     *****
-     *     ****
      *     ***
      *     **
+     *     *
+     *     
      *     *
      * 
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
-     
-    /**Scanner in = new Scanner(System.in);
-    int num = in.nextInt();
-    int i,j;
-    for(i=num;i>=1;i--)
-    		{
-        		for(j=1;j<=i;j++)
-        		{
-            			System.out.print("*");
-        		}
-        		System.out.println("");**/
-     Scanner in = new Scanner(System.in);
 
-  
+    Scanner in = new Scanner(System.in);
+
+    /prompting input & setting variable/
     int num = in.nextInt();
 
     int i = 1;
     String tri = ("");
 
-
+    /it is to keep all the information/
     ArrayList<String> list = new ArrayList<>();
 
-
+    /this while loop is to append all the information into the new list/
     while(i <= num){
 
       tri += "*";
@@ -48,7 +39,7 @@ public class Question4
 
     }
 
-
+    /the for loop is used to print out the information**/
     for (int k = list.size()-1; k > -1; k--){
 
         System.out.println(list.get(k));
