@@ -5,8 +5,8 @@ public class Question4
 {
   public static void main(String[] args)
   {
-    /
-     * Prints a right angle triangle with *. The base of the triangle depends on the integer given.
+    /**
+     Prints a right angle triangle with *. The base of the triangle depends on the integer given.
      *    e.g.
      *     > 5
      *     ***
@@ -20,16 +20,16 @@ public class Question4
 
     Scanner in = new Scanner(System.in);
 
-    /prompting input & setting variable/
+ 
     int num = in.nextInt();
 
     int i = 1;
     String tri = ("");
 
-    /it is to keep all the information/
+   
     ArrayList<String> list = new ArrayList<>();
 
-    /this while loop is to append all the information into the new list/
+   
     while(i <= num){
 
       tri += "*";
@@ -39,7 +39,6 @@ public class Question4
 
     }
 
-    /the for loop is used to print out the information**/
     for (int k = list.size()-1; k > -1; k--){
 
         System.out.println(list.get(k));
